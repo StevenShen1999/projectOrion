@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="background-color: black !important">
         <div class="container">
-            <a class="navbar-brand" href="#">Orion</a>
+            <a class="navbar-brand"><router-link to="/">Orion</router-link></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavbar">
                 <span class="navbar-toggler-icon"/>
@@ -9,10 +9,9 @@
 
             <div class="collapse navbar-collapse" id="collapsedNavbar">
                 <ul class="nav navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Past Projects</a>
-                    <a class="nav-item nav-link" href="#">Resume</a>
-                    <a class="nav-item nav-link" href="#">About Me</a>
-                    <a class="nav-item nav-link" href="#">Get In Touch</a>
+                    <a class="nav-item nav-link">Resume</a>
+                    <a class="nav-item nav-link">Past Projects</a>
+                    <a class="nav-item nav-link"><router-link to="/contact" exact>Get In Touch</router-link></a>
                 </ul>
             </div>
         </div>
@@ -24,3 +23,7 @@ export default {
     name: 'navbar'
 }
 </script>
+
+<style>
+
+</style>
