@@ -99,5 +99,11 @@ export default {
     width: 50px;
     text-align: center;
     text-decoration: none;
+    color: inherit;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: inherit;
 }
 </style>

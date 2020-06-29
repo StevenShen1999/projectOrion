@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="background-color: black !important">
         <div class="container">
-            <a class="navbar-brand"><router-link to="/">Orion</router-link></a>
+            <a class="navbar-brand"><router-link class="no-style" to="/">Orion</router-link></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavbar">
                 <span class="navbar-toggler-icon"/>
@@ -9,9 +9,9 @@
 
             <div class="collapse navbar-collapse" id="collapsedNavbar">
                 <ul class="nav navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="http://127.0.0.1:5000/serve" target="_blank">Resume</a>
-                    <a class="nav-item nav-link">Past Projects</a>
-                    <a class="nav-item nav-link"><router-link to="/contact" exact>Get In Touch</router-link></a>
+                    <a class="nav-item nav-link no-style" href="http://www.stevenshen.co/serve" target="_blank">Resume</a>
+                    <a class="nav-item nav-link no-style block">Past Projects</a>
+                    <a class="nav-item nav-link"><router-link class="no-style" to="/contact" exact>Get In Touch</router-link></a>
                 </ul>
             </div>
         </div>
@@ -25,5 +25,17 @@ export default {
 </script>
 
 <style>
+.no-style{
+    text-decoration: none;
+    color: inherit;
+}
 
+.no-style:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.block:hover {
+    cursor:not-allowed;
+}
 </style>

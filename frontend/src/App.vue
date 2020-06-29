@@ -25,13 +25,4 @@ export default {
 </script>
 
 <style>
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: none;
-    color: inherit;
-}
 </style>
