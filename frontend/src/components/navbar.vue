@@ -20,9 +20,7 @@
 
 <script>
 export default {
-    name: 'navbar',
-    methods: {
-    }
+  name: 'navbar'
 }
 </script>
 

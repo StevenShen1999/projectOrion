@@ -53,50 +53,51 @@
 
 <script>
 export default {
-    name: "contact",
-    data() {
-        return {
-            message: {
-                email: '',
-                name: '',
-                payload: ''
-            },
-            success: false,
-            submitted: false
-        }
-    },
-    methods: {
-        sendMail(){
-            console.log("Entered")
-            // TODO: Finish hooking this up with the backend
-            this.$http.post("http://127.0.0.1:5000/send", {
-                message: this.message
-            }).then((data) => {
-                if (data.status == 200){
-                    this.success = true
-                    this.submitted = true
-                }
-            })
-        }, 
-        restart(){
-            this.submitted = false
-            this.message = {
-                email: '',
-                name: '',
-                payload: ''
-
-            }
-        }
+  name: 'contact',
+  data () {
+    return {
+      message: {
+        email: '',
+        name: '',
+        payload: ''
+      },
+      success: false,
+      submitted: false
     }
+  },
+  methods: {
+    sendMail () {
+      console.log('Entered')
+      // TODO: Finish hooking this up with the backend
+      this.$http.post('http://www.stevenshen.co/send', {
+        message: this.message
+      }).then((data) => {
+        // eslint-disable-next-line eqeqeq
+        if (data.status == 200) {
+          this.success = true
+          this.submitted = true
+        }
+      })
+    },
+    restart () {
+      this.submitted = false
+      this.message = {
+        email: '',
+        name: '',
+        payload: ''
+
+      }
+    }
+  }
 }
 </script>
 
 <style>
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
 }
 </style>

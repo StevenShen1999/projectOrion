@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
-    <navbar />
-    <router-view />
-    <br /><br />
-    <foot />
-  </div>
+    <div id="app">
+        <navbar />
+        <router-view />
+        <br /><br />
+        <foot />
+    </div>
 </template>
 
 <script>
@@ -26,12 +26,12 @@ export default {
 
 <style>
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 </style>

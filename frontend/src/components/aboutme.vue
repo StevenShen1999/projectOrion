@@ -42,7 +42,6 @@
 
 <script>
 export default {
-    
 }
 </script>
 
@@ -50,4 +49,4 @@ export default {
 p {
     text-align: justify;
 }
-</style>>
+</style>
