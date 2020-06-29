@@ -9,7 +9,7 @@
 
             <div class="collapse navbar-collapse" id="collapsedNavbar">
                 <ul class="nav navbar-nav ml-auto">
-                    <a class="nav-item nav-link">Resume</a>
+                    <a class="nav-item nav-link" href="http://127.0.0.1:5000/serve" target="_blank">Resume</a>
                     <a class="nav-item nav-link">Past Projects</a>
                     <a class="nav-item nav-link"><router-link to="/contact" exact>Get In Touch</router-link></a>
                 </ul>
@@ -20,7 +20,9 @@
 
 <script>
 export default {
-    name: 'navbar'
+    name: 'navbar',
+    methods: {
+    }
 }
 </script>
 

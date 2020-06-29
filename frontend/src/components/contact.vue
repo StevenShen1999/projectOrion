@@ -10,21 +10,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-6" style="border-right: 1px solid lightgrey">
-                    <form>
+                    <form v-if="!submitted" @submit.prevent="sendMail">
                         <div class="form-group">
                             <label for="emailInput"><b>Your email address</b></label>
-                            <input type="email" class="form-control" id="emailInput" />
+                            <input type="email" class="form-control" id="emailInput" v-model="message.email" required />
                         </div>
                         <div class="form-group">
                             <label for="nameInput"><b>Your name</b></label>
-                            <input type="text" class="form-control" id="nameInput" />
+                            <input type="text" class="form-control" id="nameInput" v-model="message.name" required />
                         </div>
                         <div class="form-group">
                             <label for="messageContent"><b>Your message</b></label>
-                            <textarea class="form-control" id="emailInput" />
+                            <textarea class="form-control" id="emailInput" v-model="message.payload" required />
                         </div>
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
+                    <div v-else class="d-flex flex-column justify-content-center align-items-center" style="height: 100%">
+                        <div style="display: block">
+                            <p v-if="success" class="display-5"><b>Success</b></p>
+                            <p v-else class="display-5" style="color: red;"><small>Failed, server error</small></p>
+                        </div>
+                        <button class="btn btn-secondary" style="display: block" @click="restart">Send Another Message</button>
+                    </div>
                 </div>
                 <div class="col-6 d-flex justify-content-center align-items-center">
                     <ul class="list-unstyled">
@@ -46,7 +53,41 @@
 
 <script>
 export default {
-    
+    name: "contact",
+    data() {
+        return {
+            message: {
+                email: '',
+                name: '',
+                payload: ''
+            },
+            success: false,
+            submitted: false
+        }
+    },
+    methods: {
+        sendMail(){
+            console.log("Entered")
+            // TODO: Finish hooking this up with the backend
+            this.$http.post("http://127.0.0.1:5000/send", {
+                message: this.message
+            }).then((data) => {
+                if (data.status == 200){
+                    this.success = true
+                    this.submitted = true
+                }
+            })
+        }, 
+        restart(){
+            this.submitted = false
+            this.message = {
+                email: '',
+                name: '',
+                payload: ''
+
+            }
+        }
+    }
 }
 </script>
 
