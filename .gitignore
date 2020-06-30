@@ -1,0 +1,4 @@
+backend/*.ini
+backend/wsgi.py
+backend/__pycache__
+backend/*.log

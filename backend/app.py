@@ -57,6 +57,10 @@ Hello Steven,\n\nA message from Orion from {data['name']}({data['email']}):\n{da
     except:
         return jsonfi({'status': 'failed', 'message': 'Email server misconfigured or unavaliable'})
     '''
+    try:
+        mail.send(message)
+    except:
+        return jsonify({'status': 'failure'}), 400
 
     return jsonify({'status': 'success'})
 

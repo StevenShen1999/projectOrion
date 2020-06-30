@@ -28,7 +28,7 @@
                     <div v-else class="d-flex flex-column justify-content-center align-items-center" style="height: 100%">
                         <div style="display: block">
                             <p v-if="success" class="display-5"><b>Success</b></p>
-                            <p v-else class="display-5" style="color: red;"><small>Failed, server error</small></p>
+                            <p v-else-if="error" class="display-5" style="color: red;"><small>Failed, server error</small></p>
                         </div>
                         <button class="btn btn-secondary" style="display: block" @click="restart">Send Another Message</button>
                     </div>
@@ -62,20 +62,21 @@ export default {
         payload: ''
       },
       success: false,
+      error: false,
       submitted: false
     }
   },
   methods: {
     sendMail () {
-      console.log('Entered')
-      // TODO: Finish hooking this up with the backend
-      this.$http.post('http://www.stevenshen.co/send', {
+      this.submitted = true
+      this.$http.post('http://www.stevenshen.co/api/send', {
         message: this.message
       }).then((data) => {
         // eslint-disable-next-line eqeqeq
         if (data.status == 200) {
           this.success = true
-          this.submitted = true
+        } else {
+          this.error = true
         }
       })
     },
