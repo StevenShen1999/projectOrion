@@ -1,6 +1,6 @@
 <template>
     <div id="contact">
-        <div class="jumbotron">
+        <div class="jumbotron dark-background">
             <h1 class="h1-responsive font-weight-bold text-center">Get In Touch</h1>
             <div style="width: 75%; margin: 0 auto;">
                 <p class="w-responsive text-center mx-0">If you would like to get in touch with me, feel free to send me a message using the panel to the bottom left of this section, or using the social media links on the right.</p>
@@ -13,15 +13,15 @@
                     <form v-if="!submitted" @submit.prevent="sendMail">
                         <div class="form-group">
                             <label for="emailInput"><b>Your email address</b></label>
-                            <input type="email" class="form-control" id="emailInput" v-model="message.email" required />
+                            <input type="email" class="form-control input-dark" id="emailInput" v-model="message.email" required />
                         </div>
                         <div class="form-group">
                             <label for="nameInput"><b>Your name</b></label>
-                            <input type="text" class="form-control" id="nameInput" v-model="message.name" required />
+                            <input type="text" class="form-control input-dark" id="nameInput" v-model="message.name" required />
                         </div>
                         <div class="form-group">
                             <label for="messageContent"><b>Your message</b></label>
-                            <textarea class="form-control" id="emailInput" v-model="message.payload" required />
+                            <textarea class="form-control input-dark" id="emailInput" v-model="message.payload" required />
                         </div>
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
@@ -106,5 +106,19 @@ export default {
 .fa:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.dark-background {
+  background-color: #1e2022;
+}
+
+.input-dark {
+  background-color: #181a1b;
+  color: white;
+}
+
+.input-dark:focus {
+  background-color:  #181a1b;
+  color: white;
 }
 </style>
