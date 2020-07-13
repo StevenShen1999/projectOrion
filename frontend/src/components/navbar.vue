@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse" id="collapsedNavbar">
                 <ul class="nav navbar-nav ml-auto">
                     <a class="nav-item nav-link no-style" href="http://www.stevenshen.co/api/serve" target="_blank">Resume</a>
-                    <a class="nav-item nav-link no-style block">Past Projects</a>
+                    <a class="nav-item nav-link"><router-link class="no-style" to="/past" exact>Projects</router-link></a>
                     <a class="nav-item nav-link"><router-link class="no-style" to="/contact" exact>Get In Touch</router-link></a>
                 </ul>
             </div>
