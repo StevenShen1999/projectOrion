@@ -10,28 +10,28 @@
     <div class="timeline">
       <div class="timeline-container left">
         <div class="content">
-          <h2>2020 - TauCeti</h2>
+          <h3 class="h3-responsive">2020 - TauCeti</h3>
           <p>Placeholder Text</p>
           <p><small><a href="https://github.com/StevenShen1999/projectTauCeti">GitHub Link</a></small></p>
         </div>
       </div>
       <div class="timeline-container right">
         <div class="content">
-          <h2>2019 - Pointr</h2>
+          <h3 class="h3-responsive">2019 - Pointr</h3>
           <p>Placeholder Text</p>
           <p><small>GitHub Link not avaliable, private repo</small></p>
         </div>
       </div>
       <div class="timeline-container left">
         <div class="content">
-          <h2>2019 - Chibaba</h2>
+          <h3 class="h3-responsive">2019 - Chibaba</h3>
           <p>Placeholder Text</p>
           <p><small><a href="https://github.com/jysim3/chibaba">GitHub Link</a></small></p>
         </div>
       </div>
       <div class="timeline-container right">
         <div class="content">
-          <h2>2018 - Course Avaliability Scraper</h2>
+          <h3 class="h3-responsive">2018 - Course Avaliability Scraper</h3>
           <p>A webscrapper written in Perl to notify me when a course I want to enrol in has a slot opening.</p>
           <p><small>GitHub Link not avaliable, private repo</small></p>
         </div>
