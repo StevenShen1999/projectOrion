@@ -5,35 +5,41 @@
         <div style="width: 75%; margin: 0 auto;">
             <p class="w-responsive text-center mx-0">There have been various projects I have took part in either as a side project, a hackthon entry or a school assignment. Below is a collection of the ones I am most fond of.</p>
         </div>
-        <h3 class="h3-responsive text-center mx-0">PAGE NOT YET IMPLEMENTED</h3>
     </div>
     <div class="timeline">
       <div class="timeline-container left">
         <div class="content">
           <h3 class="h3-responsive">2020 - TauCeti</h3>
-          <p>Placeholder Text</p>
-          <p><small><a href="https://github.com/StevenShen1999/projectTauCeti">GitHub Link</a></small></p>
+          <p>The latest side project undertaken, dreamt this up during 2019's T3 exam season.
+          <br><br>The idea is to facilitate easier access for course materials, notes taken by alumnis and a general community forum for learning together
+          <br><br>This project is current a work in progress, aiming for a 2020 T2 exam season launch</p>
+          <p><small><a href="https://github.com/StevenShen1999/projectTauCeti" target="_blank">GitHub Link</a></small></p>
         </div>
       </div>
       <div class="timeline-container right">
         <div class="content">
           <h3 class="h3-responsive">2019 - Pointr</h3>
-          <p>Placeholder Text</p>
-          <p><small>GitHub Link not avaliable, private repo</small></p>
+          <p>One of the many hackathons our team participated in 2019, this one was the UNSW Intercollege Hackathon and the theme was improving the lives of students living in on-campus accommodation. 
+          <br><br>We managed to push out a MVP within 10 hours, using a Vue.js frontend and a Python/FLask/Postgres backend. 
+          <br><br>Amazingly, we managed to win this one and are currently in the process of implementing this for production use for UNSW's Arc.</p>
+          <p class="private"><small>GitHub Link not avaliable, private repo</small></p>
         </div>
       </div>
       <div class="timeline-container left">
         <div class="content">
           <h3 class="h3-responsive">2019 - Chibaba</h3>
-          <p>Placeholder Text</p>
-          <p><small><a href="https://github.com/jysim3/chibaba">GitHub Link</a></small></p>
+          <p>The very first hackathon I participated in, 2019 CSESoc annual hackathon, and the theme was UN's sustainability goals.
+          <br><br>We decided to focus on food waste and cooked up this project within 24 horus, written in a React frontend and a Python/Flask/SQLite backend.
+          <br><br>This was also my first exposure to API designs using Python/Flask, must've read hours worth of documentation.</p>
+          <p><small><a href="https://github.com/jysim3/chibaba" target="_blank">GitHub Link</a></small></p>
         </div>
       </div>
       <div class="timeline-container right">
         <div class="content">
           <h3 class="h3-responsive">2018 - Course Avaliability Scraper</h3>
-          <p>A webscrapper written in Perl to notify me when a course I want to enrol in has a slot opening.</p>
-          <p><small>GitHub Link not avaliable, private repo</small></p>
+          <p>A webscrapper written in Perl to notify users when a course they want to enrol in has a slot opening.</p>
+          <p>Currently thinking about rewriting this script in Python</p>
+          <p class="private"><small>GitHub Link not avaliable, private repo</small></p>
         </div>
       </div>
     </div> 
@@ -188,5 +194,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.private:hover {
+  cursor: not-allowed;
 }
 </style>
