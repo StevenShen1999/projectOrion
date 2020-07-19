@@ -67,4 +67,4 @@ Hello Steven,\n\nA message from Orion from {data['name']}({data['email']}):\n{da
 CORS(app)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(ssl_context=('cert.pem', 'key.pem'))

@@ -69,7 +69,7 @@ export default {
   methods: {
     sendMail () {
       this.submitted = true
-      this.$http.post('http://www.stevenshen.co/api/send', {
+      this.$http.post('https://www.stevenshen.co/api/send', {
         message: this.message
       }).then((data) => {
         // eslint-disable-next-line eqeqeq
