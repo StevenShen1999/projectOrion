@@ -14,7 +14,7 @@
             <div class="row">
                <div class="col-md-6 order-12 order-md-1 d-flex justify-content-center align-items-center">
                     <p>
-                    While primarily a backend engineer, with various side projects completed in the past using <code>flask</code> and <code>postgres</code>. I have recently started learning about frontend web development.<br/><br/>
+                    While primarily a backend engineer, with various projects completed in the past using <code>flask</code> and <code>postgres</code>. I have recently started learning about frontend web development.<br/><br/>
                     This website you are currently visiting is written using the power of <code>Vue.js</code> and <code>Bootstrap 4</code>.
                     </p>
                 </div>
