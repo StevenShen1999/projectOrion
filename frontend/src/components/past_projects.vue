@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="jumbotron dark-background">
+    <div class="jumbotron dark-background mb-2">
         <h1 class="h1-responsive font-weight-bold text-center">Past Projects</h1>
         <div style="width: 75%; margin: 0 auto;">
             <p class="w-responsive text-center mx-0">There have been various projects I have took part in either as a side project, a hackthon entry or a school assignment. Below is a collection of the ones I am most fond of.</p>
