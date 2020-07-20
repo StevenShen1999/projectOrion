@@ -1,11 +1,12 @@
 <template>
-  <div>
+  <div class="past_projects">
     <div class="jumbotron dark-background mb-2">
         <h1 class="h1-responsive font-weight-bold text-center">Past Projects</h1>
         <div style="width: 75%; margin: 0 auto;">
             <p class="w-responsive text-center mx-0">There have been various projects I have took part in either as a side project, a hackthon entry or a school assignment. Below is a collection of the ones I am most fond of.</p>
         </div>
     </div>
+
     <div class="timeline">
       <div class="timeline-container left">
         <div class="content">
@@ -114,7 +115,7 @@ body {
 
 /* Place the container to the right */
 .right {
-  left: 50.3%;
+  left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -147,7 +148,7 @@ body {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -12.5px;
 }
 
 /* The actual content */
@@ -183,7 +184,7 @@ body {
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 17.5px;
   }
 
 /* Make all right containers behave like the left ones */
