@@ -12,16 +12,16 @@
         <div class="content">
           <h3 class="h3-responsive">2020 - TauCeti</h3>
           <p>The latest side project undertaken, dreamt this up during 2019's T3 exam season.
-          <br><br>The idea is to facilitate easier access for course materials, notes taken by alumnis and a general community forum for learning together
+          <br><br>The idea is to facilitate easier access for course materials, revision notes taken by alumnis and acts as a general community forum for learning the course together
           <br><br>This project is current a work in progress, aiming for a 2020 T2 exam season launch
-          <br><br>Implemented using a <code>Vue.js</code> and a <code>Python</code>/<code>Flask</code>/<code>Flask-restx</code>/<code>SQLAlchemy</code>/<code>Postgres</code> backend. </p>
+          <br><br>Implemented using a <code>Vue.js</code> frontend and a <code>Python</code>/<code>Flask</code>/<code>Flask-restx</code>/<code>SQLAlchemy</code>/<code>Postgres</code> backend. </p>
           <p><small><a href="https://github.com/StevenShen1999/projectTauCeti" target="_blank">GitHub Link</a></small></p>
         </div>
       </div>
       <div class="timeline-container right">
         <div class="content">
           <h3 class="h3-responsive">2019 - Pointr</h3>
-          <p>One of the many hackathons our team participated in 2019, this one was the UNSW Intercollege Hackathon and the theme was improving the lives of students living in on-campus accommodation. 
+          <p>One of the many hackathons our team took part in, in 2019. This hackathon was the UNSW Intercollege Hackathon and the theme was improving the lives of students living in on-campus accommodations. 
           <br><br>We managed to push out a MVP within 10 hours, using a <code>Vue.js</code> frontend and a <code>Python</code>/<code>Flask</code>/<code>Postgres</code> backend. 
           <br><br>Amazingly, we managed to win this one and are currently in the process of implementing this for production use for UNSW's Arc.</p>
           <p class="private"><small>GitHub Link not avaliable, private repo</small></p>
