@@ -23,7 +23,7 @@
           <h3 class="h3-responsive">2019 - Pointr</h3>
           <p>One of the many hackathons our team took part in, in 2019. This hackathon was the UNSW Intercollege Hackathon and the theme was improving the lives of students living in on-campus accommodations. 
           <br><br>We managed to push out a MVP within 10 hours, using a <code>Vue.js</code> frontend and a <code>Python</code>/<code>Flask</code>/<code>Postgres</code> backend. 
-          <br><br>Amazingly, we managed to win this one and are currently in the process of implementing this for production use for UNSW's Arc.</p>
+          <br><br>Amazingly, we managed to win this one and are currently in the process of implementing this for production use for UNSW's Arc (memorandum of understanding signed in August, 2020).</p>
           <p class="private"><small>GitHub Link not avaliable, private repo</small></p>
         </div>
       </div>
