@@ -52,10 +52,11 @@ def send_email():
 Hello Steven,\n\nA message from Orion from {data['name']}({data['email']}):\n{data['payload']}\n\n"""
 
     '''
+    # TODO: Debug this function
     try:
         Thread(target=sendAsyncMail, args=(app, message)).start()
     except:
-        return jsonfi({'status': 'failed', 'message': 'Email server misconfigured or unavaliable'})
+        return jsonfiy({'status': 'failed', 'message': 'Email server misconfigured or unavaliable'})
     '''
     try:
         mail.send(message)
@@ -67,4 +68,4 @@ Hello Steven,\n\nA message from Orion from {data['name']}({data['email']}):\n{da
 CORS(app)
 
 if __name__ == "__main__":
-    app.run(ssl_context=('cert.pem', 'key.pem'))
+    app.run()
